@@ -1,0 +1,40 @@
+print(" Hello and welcome to calculator")
+
+# method return calculation
+def add(x,y):
+  return x+y
+
+def sub(x,y):
+  return x-y
+
+def multi(x,y):
+  return x*y
+
+def div(x,y):
+  return x/y
+
+#make choices and call method 
+print("what you want to do today?")
+print("1.Add ")
+print("2.Sub ")       
+print("3.Multiply")
+print("4.Division")
+
+# menu system for choices
+while True:
+  choice = input("Enter the input  choices 1/2/3/4")
+
+  if choice in( "1", "2","3","4"):
+    num1=float (input(" Enter the first number"))
+    num2=float (input(" Enter the second number"))
+    if choice == "1":
+      print(add(num1, num2))
+    if choice == "2":
+      print(sub(num1,num2))
+    if choice =="3":
+      print(multi(num1,num2))
+    if choice =="4":
+      print(div(num1, num2))
+
+  else:
+    print(" Invalid Input ")
